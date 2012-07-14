@@ -20,7 +20,7 @@ scale.iOS();
 $(document).ready(function() {
 	if ($.fn.mobileMenu) {
 		$('#navigation ul').mobileMenu({
-			switchWidth: 768,                   // width (in px to switch at)
+			switchWidth: 660,                   // width (in px to switch at)
 			topOptionText: 'Choose Page',     // first option text
 			indentString: '&nbsp;&nbsp;&nbsp;'  // string for indenting nested items
 		});
