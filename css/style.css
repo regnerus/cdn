@@ -45,9 +45,6 @@ form fieldset:before, form fieldset:after {
 form fieldset:after {
 	clear: both
 }
-@media all and (max-width:660px) {
-	form fieldset{ float:none !important }
-}
 form fieldset input.form-text, form fieldset textarea {
     display: block;
     width: 300px;
@@ -75,6 +72,11 @@ form fieldset label {
     float: left;
     width: 300px;
     font-weight: bold;
+    text-align: right;
+}
+@media all and (max-width:660px) {
+	form fieldset label { text-align: left !important }
+	form fieldset{ float:none !important }
 }
 button, .button, form input[type="submit"] {
     margin: 0; padding: 5px 10px;
