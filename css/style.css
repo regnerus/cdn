@@ -125,7 +125,7 @@ header nav[role="navigation"] li {
 }
 header nav[role="navigation"] li a {
     float: left;
-    padding: 8px 12px;
+    padding: 8px 0 0;
     color: #fff;
     text-decoration: none;
     -moz-border-radius: 4px;
@@ -139,17 +139,13 @@ header nav[role="navigation"] li.active a {
     color: #fff;
     background: #666;
 }
-article { margin: 0 0 1.2em 20% }
+article { 
+	display: block; float: none;
+	width: auto;
+	margin: 0 0 1.2em 0;
+}
 article header h3 { }
 article footer { color: #999 }
-article aside {
-    float: left;
-    width: 20%;
-    margin-left: -25%;
-    color: #999;
-    font-size: 87.5%;
-    line-height: 1.8em;
-}
 article .asset-wrapper {
     width: 125%;
     margin-left: -25%;
@@ -166,23 +162,6 @@ article ol.thumb-grid {
 article p, article figure {
     margin: 0 0 20px 0;
     color: #666;
-}
-@media screen and (max-width: 767px) { 	
-	header nav[role="navigation"] {
-		width: 100%;
-		padding: 8px 0 0;
-	}
-	article {
-	    display: block; float: none;
-	    width: auto;
-	    margin: 0 0 20px 0;
-	}
-	article aside {
-	    float: none;
-	    width: auto;
-	    margin: 0 0 .5em 0;
-	    line-height: 1.5em;
-	}
 }
 ol.commentlist li {
     margin: 0 0 10px 0; padding: 0 0 10px 0;
