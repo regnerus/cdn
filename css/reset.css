@@ -88,6 +88,9 @@ body {
     color: black;
     font: 87.5%/1em "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+@media all and (max-width: 660px) {
+	div.grater-container { max-width: 300px }
+}
 .ie body { font-size: 100% }
 ol, ul { list-style: none }
 blockquote, q { quotes: none }
