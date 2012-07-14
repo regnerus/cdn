@@ -125,7 +125,7 @@ header nav[role="navigation"] li {
 }
 header nav[role="navigation"] li a {
     float: left;
-    padding: 8px 0 0;
+    padding: 8px 12px;
     color: #fff;
     text-decoration: none;
     -moz-border-radius: 4px;
