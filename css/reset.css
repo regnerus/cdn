@@ -84,7 +84,7 @@ html {
     overflow-y: scroll;
 }
 body {
-    margin: 8px auto 0; padding: 0 2%;
+    max-width: 640px; margin: 0 auto;
     color: black;
     font: 87.5%/1em "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
