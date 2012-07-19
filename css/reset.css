@@ -174,17 +174,7 @@ sub, sup {
 }
 sup { top: -0.5em }
 sub { bottom: -0.25em }
-img {
-    height: auto; max-width: 100%;
-    -ms-interpolation-mode: bicubic;
-    background: transparent;
-    border: 0;
-    vertical-align: middle;
-}
-img, embed, object, video {
-    height: inherit; max-width: 100%;
-    _width: 100%;
-}
+
 .flex-video {
 	position: relative;
 	padding-top: 25px;

@@ -11,23 +11,7 @@ blockquote {
     margin: 0 0 18px; padding: 0 0 0 15px;
     border-left: 5px solid #eeeeee;
 }
-code {
-    padding: 3px 4px;
-    background-color: #f7f7f9; color: #d14;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border: 1px solid #e1e1e8;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    margin: 0 0 1em; padding: 8.5px;
-    background-color: #f5f5f5;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
+
 ol.thumb-grid li {
     float: left;
     width: 130px;
@@ -81,34 +65,6 @@ button:active, .button.active, .button:active, .button.active, form input[type="
 	background:#f0f2f6;
 	position:relative;
 	top:1px;
-}
-header h1 {
-	float: left;
-	width: 20%;
-}
-header nav[role="navigation"] {
-	float: left;
-	width: 80%;
-}
-header nav[role="navigation"] li {
-    float: left;
-    margin: 0 4px 0 0;
-}
-header nav[role="navigation"] li a {
-    float: left;
-    padding: 8px 12px;
-    color: #fff;
-    text-decoration: none;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background: #bbb;
-    border-radius: 4px;
-}
-header nav[role="navigation"] li a:active { background: #888 }
-header nav[role="navigation"] li a:hover, header nav[role="navigation"] li a:focus { background: #999 }
-header nav[role="navigation"] li.active a {
-    color: #fff;
-    background: #666;
 }
 article { 
 	display: block; float: none;
@@ -204,41 +160,7 @@ ol.commentlist li h3 a img {
     border-radius: 0 4px 0 0;
 }
 .table-bordered th + th, .table-bordered td + td, .table-bordered th + td, .table-bordered td + th { border-left: 1px solid #eee }
-footer[role="contentinfo"] {
-    margin: 10px 0; padding: 15px 0 0 0;
-    color: #999;
-    border-top: 1px solid #eee;
-    font-size: 87.5%;
-}
-.orbit-wrapper .slider-nav span {
-    width: 120px;
-    height: 100%;
-    top: 0;
-}
-.orbit-wrapper .slider-nav span.right { }
-.orbit-wrapper .slider-nav span.left { }
-ul.orbit-bullets li {
-    float: left;
-	cursor: pointer;
-    color: #999;
-    text-indent: -9999px;
-    background: #999;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    width: 8px;
-    height: 8px;
-    overflow: hidden;
-	margin: 2px 3px;
-}
-ul.orbit-bullets li.active {
-	background: transparent;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border: 2px solid #999;
-	margin: 0 2px;
-}
+
 .label, .badge {
 	font-weight: bold;
 	color: #fff;
