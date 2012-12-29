@@ -17,14 +17,17 @@
 //
 //scale.iOS();
 var choosePage;
-if ($("html").attr("lang") === "en") {
+if ($("html").attr("lang") == "en") {
 	choosePage = "Choose a Page" } 
-else if ($("html").attr("lang") === "nl") {
+else if ($("html").attr("lang") == "nl") {
     choosePage = "Kies een Pagina" } 
-else if ($("html").attr("lang") === "de") {
+else if ($("html").attr("lang") == "de") {
 	choosePage = "Wählen Sie eine Seite" }
-else if ($("html").attr("lang") === "fr") {
+else if ($("html").attr("lang") == "fr") {
 	choosePage = "Choisir une page" }
+else {
+	choosePage = "Choose a Page";
+} 
 
 $(document).ready(function() {
 	if ($.fn.mobileMenu) {
