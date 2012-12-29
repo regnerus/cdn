@@ -22,6 +22,8 @@ window.twttrCall = function (t) {
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js');
     // Twitter SDK
     add('//platform.twitter.com/widgets.js', 'twitter-wjs', window.twttrCall);
+    //Facebook SDK
+    add('//connect.facebook.net/nl_NL/all.js#xfbml=1&appId=73619953708', 'facebook-jssdk');
 }(document, 'script'));
 
 // Twitter event tracking in GA
