@@ -16,12 +16,21 @@
 //})(document);
 //
 //scale.iOS();
+var choosePage;
+if ($("html").attr("lang") === "en") {
+	choosePage = "Choose a Page" } 
+else if ($("html").attr("lang") === "nl") {
+    choosePage = "Kies een Pagina" } 
+else if ($("html").attr("lang") === "de") {
+	choosePage = "Wählen Sie eine Seite" }
+else if ($("html").attr("lang") === "fr") {
+	choosePage = "Choisir une page" }
 
 $(document).ready(function() {
 	if ($.fn.mobileMenu) {
 		$("#navigation ul").mobileMenu({
 			switchWidth: 660,                   // width (in px to switch at)
-			topOptionText: "Choose Page",     // first option text
+			topOptionText: choosePage,     // first option text
 			indentString: "&nbsp;&nbsp;&nbsp;"  // string for indenting nested items
 		});
 	}
