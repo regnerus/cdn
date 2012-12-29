@@ -26,6 +26,30 @@ $(document).ready(function() {
 		});
 	}
 	
+	if ($("code").length > 0) {
+		head.js({highlight: "http://cdn.regner.us/js/highlight.js"});	
+		head.ready("highlight", function() {
+			$("head").append("<link>");
+			css = $("head").children(":last");
+			css.attr({
+				rel:  "stylesheet",
+				type: "text/css",
+				href: "http://cdn.regner.us/css/highlight/github.css"
+			});  
+			hljs.initHighlightingOnLoad();
+		});	
+	}
+	
+	if ($(".animate").length > 0) {
+		$("head").append("<link>");
+		css = $("head").children(":last");
+		css.attr({
+			rel:  "stylesheet",
+			type: "text/css",
+			href: "http://cdn.regner.us/css/animate.css"
+		});
+	}
+	
 	$(".alert").alert()
 	
 	$('.slides').orbit({
