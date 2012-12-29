@@ -51,6 +51,8 @@ head.ready("view", function() {
 head.js(
 	{jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}, 
 	function() {
-		{view: "//cdn.regner.us/js/view.js"},
-		head.js({plugins: "//cdn.regner.us/js/plugins.js"});		
+		head.js(
+			{view: "//cdn.regner.us/js/view.js"},
+			{plugins: "//cdn.regner.us/js/plugins.js"}
+		);		
 });
