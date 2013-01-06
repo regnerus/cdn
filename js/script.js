@@ -31,7 +31,7 @@ else {
 } 
 
 $(document).ready(function() {
-	if ($.fn.mobileMenu) {
+	if ($.fn.mobileMenu && $(".list-on-phones ul").length > 0) {
 		$(".list-on-phones ul").mobileMenu({
 			switchWidth: 660,                   // width (in px to switch at)
 			topOptionText: choosePage,     // first option text
