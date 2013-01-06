@@ -16,6 +16,7 @@
 //})(document);
 //
 //scale.iOS();
+
 var choosePage;
 if ($("html").attr("lang") == "en") {
 	choosePage = "Choose a Page" } 
@@ -31,7 +32,7 @@ else {
 
 $(document).ready(function() {
 	if ($.fn.mobileMenu) {
-		$("#navigation ul").mobileMenu({
+		$(".list-on-phones ul").mobileMenu({
 			switchWidth: 660,                   // width (in px to switch at)
 			topOptionText: choosePage,     // first option text
 			indentString: "&nbsp;&nbsp;&nbsp;"  // string for indenting nested items
