@@ -49,6 +49,12 @@ head.ready("plugins", function() {
 head.ready("view", function () {
 	new View( $('.view') );
 });
+
+if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+  head.ready("plugins", function () {
+  	head.js({selectivizr: "//cdn.regner.us/js/selectivizr.js"},);
+  });
+}
   
 head.js(
 	{jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}, 
