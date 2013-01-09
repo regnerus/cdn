@@ -1,15 +1,9 @@
-@import url(//cdn.regner.us/css/reset.min.css);
+@import url(//cdn.regner.us/css/reset.css);
+@import url(//cdn.regner.us/css/grid.css);
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 @import url(//cdn.regner.us/fonts/pictos.css);
 
-.wrapper {
-    display: block;
-    min-width: 300px;
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 2em 10px 0;
-}
 body,
 input,
 textarea,
