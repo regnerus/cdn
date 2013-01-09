@@ -493,21 +493,8 @@ legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
 }
-.columns { margin: 0 auto }
-.columns>div { width: 300px }
-.columns>div:first-child,
-.columns.reverse>div:last-child { float: left }
-.columns>div:last-child,
-.columns.reverse>div:first-child { float: right }
-@media all and (max-width: 660px) { 
-	.columns>div {
-	    float: none !important;
-	    margin: 0 auto;
-	}
-}
 .clearfix,
 .group,
-.columns,
 nav,
 header,
 footer { *zoom: 1  }
@@ -515,8 +502,6 @@ footer { *zoom: 1  }
 .clearfix:after,
 .group:before,
 .group:after,
-.columns:before,
-.columns:after,
 nav:before,
 nav:after,
 header:before,
@@ -528,7 +513,6 @@ footer:after {
 }
 .clearfix:after,
 .group:after,
-.columns:after,
 nav:after,
 header:after,
 footer:after { clear: both }

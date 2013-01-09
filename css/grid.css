@@ -30,16 +30,16 @@
   letter-spacing: 0; /* And restore our letter spacing. */
 }
 .one-third {
-  width: 31.313%;
+  width: 30.303%;
 }
 .columns>div, .half {
   width: 45.45%;
 }
 .two-thirds {
-  width: 62.626%;
+  width: 63.636%;
 }
 .full {
-  width: 100%%;
+  width: 96.967%;
   margin: 0;
 }
 @media screen and (max-width: 660px) {
