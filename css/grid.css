@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 2em 10px 0;
 }
-.wrapper.large { max-width: 940px }
+.wrapper.large { max-width: 938.065px }
 
 .columns, .grids {
   width: auto;
@@ -20,7 +20,7 @@
   letter-spacing: -.25em; /* Fix inline-block weirdness */
 }
 
-.columns>div, .grids [class*="grid-"] {
+.columns>div, .grids [class*="grid-"], .grids .half, .grids .one-third, .grids .two-thirds {
   display: inline-block;
   margin: 0 0 0 3.03%;
   -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
@@ -39,20 +39,20 @@
 .grid-3 {
   width: 22.917%;
 }
-.grid-4, .grid-one-third {
+.grid-4, .one-third {
   width: 31.313%;
 }
 .grid-5 {
   width: 39.583%;
 }
-.columns>div, .grid-6, .grid-half {
+.columns>div, .grid-6, .half {
   width: 45.45%;
 }
 .grid-7 {
   width: 56.25%;
 }
-.grid-8, .grid-two-thirds {
-  width: 64.583%;
+.grid-8, .two-thirds {
+  width: 65.657%;
 }
 .grid-9 {
   width: 72.917%;
