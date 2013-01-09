@@ -9,8 +9,8 @@
 
 .columns, .grids {
   width: auto;
-  max-width: 960px;
-  margin: 0 0 0 -6.06%;
+  max-width: 958.065px;
+  margin: 0 0 0 -3.03%;
   list-style: none;
   /* So we can make grids out of lists. */
 
@@ -22,7 +22,7 @@
 
 .columns>div, .grids [class*="grid-"] {
   display: inline-block;
-  margin: 0 0 0 6.06%;
+  margin: 0 0 0 3.03%;
   -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -40,7 +40,7 @@
   width: 22.917%;
 }
 .grid-4, .grid-one-third {
-  width: 31.25%;
+  width: 31.313%;
 }
 .grid-5 {
   width: 39.583%;
