@@ -577,15 +577,3 @@ dl dd {
     margin: .5em 0 1em;
 }
 a.close { color: #999 }
-.columns { margin: 0 auto }
-.columns>div { width: 300px }
-.columns>div:first-child,
-.columns.reverse>div:last-child { float: left }
-.columns>div:last-child,
-.columns.reverse>div:first-child { float: right }
-@media all and (max-width: 660px) { 
-	.columns>div {
-	    float: none !important;
-	    margin: 0 auto;
-	}
-}
