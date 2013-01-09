@@ -20,7 +20,7 @@
   letter-spacing: -.25em; /* Fix inline-block weirdness */
 }
 
-.columns>div, .grids [class*="grid-"], .grids .half, .grids .one-third, .grids .two-thirds {
+.columns>div, .grids>* {
   display: inline-block;
   margin: 0 0 0 3.03%;
   -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
@@ -29,42 +29,17 @@
   vertical-align: top;
   letter-spacing: 0; /* And restore our letter spacing. */
 }
-
-.grid-1 {
-  width: 5.556%;
-}
-.grid-2 {
-  width: 14.583%;
-}
-.grid-3 {
-  width: 22.917%;
-}
-.grid-4, .one-third {
+.one-third {
   width: 31.313%;
 }
-.grid-5 {
-  width: 39.583%;
-}
-.columns>div, .grid-6, .half {
+.columns>div, .half {
   width: 45.45%;
 }
-.grid-7 {
-  width: 56.25%;
-}
-.grid-8, .two-thirds {
+.two-thirds {
   width: 62.626%;
 }
-.grid-9 {
-  width: 72.917%;
-}
-.grid-10 {
-  width: 81.25%;
-}
-.grid-11 {
-  width: 89.583%;
-}
-.grid-12 {
-  width: 97.917%;
+.full {
+  width: 100%%;
   margin: 0;
 }
 @media screen and (max-width: 660px) {
@@ -72,7 +47,7 @@
     margin: 0;
     width: auto;
   }
-  .grids [class*="grid-"] {
+  .columns>div, .grids>* {
     display: block;
     width: auto;
     margin: 0;
