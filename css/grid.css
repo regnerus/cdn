@@ -28,7 +28,7 @@
 
 .columns.three>* { width: 27.451% }
 
-.columns.two>* { width: 44.118% }
+.columns>*, .columns.two>* { width: 44.118% }
 
 .wrapper.large .columns {
 	max-width: 1020px;
