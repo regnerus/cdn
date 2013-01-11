@@ -12,9 +12,6 @@ button {
     color: #444;
     font-weight: 400;
 }
-@media all and (max-width: 660px) { 
-	.wrapper { max-width: 300px }
-}
 a {
     color: #0881b3;
     text-decoration: none;
