@@ -5,51 +5,64 @@
     margin: 0 auto;
     padding: 2em 10px 0;
 }
-.wrapper.large { max-width: 938.065px }
+.wrapper.large { max-width: 980px }
 
-.columns, .grids {
-  width: auto;
-  max-width: 958.065px;
-  margin: 0 0 0 -3.03%;
-  list-style: none;
-  /* So we can make grids out of lists. */
-
-  overflow: hidden;
-  /* Clear the floats */
-
-  letter-spacing: -.25em; /* Fix inline-block weirdness */
+.columns {
+	width: auto;
+	max-width: 680px;
+	list-style: none;
+	margin: 0 -2.941%;
+	overflow: hidden;
+	letter-spacing: -.25em;
 }
 
-.columns>div, .grids>* {
-  display: inline-block;
-  margin: 0 0 0 3.03%;
-  -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  vertical-align: top;
-  letter-spacing: 0; /* And restore our letter spacing. */
+.columns>* {
+	margin: 0 2.941%;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: top;
+	letter-spacing: 0;
 }
-.one-third {
-  width: 30.303%;
+
+.columns.three>* { width: 27.451% }
+
+.columns.two>* { width: 44.118% }
+
+.wrapper.large .columns {
+	max-width: 1020px;
+  	margin: 0 -1.961%;
 }
-.columns>div, .half {
-  width: 45.45%;
+
+.wrapper.large .columns>* { margin: 0 1.961% }
+
+.wrapper.large .columns.three>* { width: 29.412% }
+
+.wrapper.large .columns>*, .wrapper.large .columns.two>* { width: 46.078% }
+
+@media only screen and (max-width : 768px) {
+	.wrapper.large { max-width: 640px }
+	
+	.wrapper.large .columns {
+		max-width: 680px;
+	  	margin: 0 -2.941%;
+	}
+	.wrapper.large .columns>* { margin: 0 2.941% }
+	
+	.wrapper.large .columns.three>* { width: 27.451% }
+	
+	.wrapper.large .columns.two>* { width: 44.118% }
 }
-.two-thirds {
-  width: 63.636%;
-}
-.full {
-  width: 96.967%;
-  margin: 0;
-}
-@media screen and (max-width: 660px) {
-  .grids {
-    margin: 0;
-    width: auto;
-  }
-  .columns>div, .grids>* {
-    display: block;
-    width: auto;
-    margin: 0;
-  }
+
+@media only screen and (max-width : 480px) {
+	.wrapper { max-width: 300px }
+	
+	.columns { margin: 0 }
+	
+	.columns>* {
+	  margin: 0;
+	  width: 100% !important;
+	}
+
 }
