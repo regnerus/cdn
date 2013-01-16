@@ -2,6 +2,7 @@ head.js(
 	{jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}, 
 	function() {
 		head.js(
+			{view: "//cdn.regner.us/js/view.js"},
 			{plugins: "//cdn.regner.us/js/plugins.js"}
 		);
 		
