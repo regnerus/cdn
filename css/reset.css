@@ -425,20 +425,6 @@ video {
     _width: 100%;
 }
 a img { border: 0 }
-a.close {
-    color: #999;
-    float: right;
-}
-a.close:before {
-    speak: none;
-    content: "\2613";
-    cursor: pointer;
-    display: block;
-    font: normal .8em 'Pictos';
-    margin: 4px;
-    color: inherit;
-}
-a.close:hover { border: 0 }
 button,
 input {
     *overflow: visible;
