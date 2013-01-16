@@ -158,3 +158,9 @@ i.graph:before {
 i.edit:before {
 	content: "\270d";
 }
+
+.no-fontface [data-icon]:before, .no-fontface i:before {
+	font-family: sans-serif;
+	content: '' !important;
+	display: none;
+}
