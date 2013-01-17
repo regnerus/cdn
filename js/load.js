@@ -6,7 +6,7 @@ head.js(
 			{plugins: "//cdn.regner.us/js/plugins.js"}
 		);
 		
-		if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+		if (!$.support.leadingWhitespace) {
 			head.js({selectivizr: "//cdn.regner.us/js/selectivizr.js"});
 		}
 });
