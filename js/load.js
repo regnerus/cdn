@@ -54,9 +54,9 @@ head.ready("plugins", function () {
 		});
 	}
 	
-	if ($(".chosen").length > 0) {
-		head.js({highlight: "//cdn.regner.us/js/chosen.js"});	
-		head.ready("highlight", function() {
+	if ($("select.chosen").length > 0) {
+		head.js({chosen: "//cdn.regner.us/js/chosen.js"});	
+		head.ready("chosen", function() {
 			$("head").append("<link>");
 			css = $("head").children(":last");
 			css.attr({
@@ -64,7 +64,7 @@ head.ready("plugins", function () {
 				type: "text/css",
 				href: "//cdn.regner.us/css/chosen.css"
 			});  
-			hljs.initHighlightingOnLoad();
+			$(".chosen").chosen();
 		});	
 	}
 	
