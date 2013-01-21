@@ -54,6 +54,20 @@ head.ready("plugins", function () {
 		});
 	}
 	
+	if ($(".chosen").length > 0) {
+		head.js({highlight: "//cdn.regner.us/js/chosen.js"});	
+		head.ready("highlight", function() {
+			$("head").append("<link>");
+			css = $("head").children(":last");
+			css.attr({
+				rel:  "stylesheet",
+				type: "text/css",
+				href: "//cdn.regner.us/css/chosen.css"
+			});  
+			hljs.initHighlightingOnLoad();
+		});	
+	}
+	
 	$(".slides").orbit({
 		animationSpeed: 800,
 		bullets: true
