@@ -54,7 +54,7 @@ head.ready("plugins", function () {
 		});
 	}
 	
-	if ($("select.chosen").length > 0) {
+	if ($(".chosen").length > 0) {
 		head.js({chosen: "//cdn.regner.us/js/chosen.js"});	
 		head.ready("chosen", function() {
 			$("head").append("<link>");
