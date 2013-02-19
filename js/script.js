@@ -42,26 +42,26 @@ $(document).ready(function() {
 	if ($("code").length > 0) {
 		head.js({highlight: "//cdn.regner.us/js/highlight.js"});	
 		head.ready("highlight", function() {
-			$("head").append("<link>");
-			css = $("head").children(":last");
-			css.attr({
-				rel:  "stylesheet",
-				type: "text/css",
-				href: "//cdn.regner.us/css/highlight/github.css"
-			});  
+//			$("head").append("<link>");
+//			css = $("head").children(":last");
+//			css.attr({
+//				rel:  "stylesheet",
+//				type: "text/css",
+//				href: "//cdn.regner.us/css/highlight/github.css"
+//			});  
 			hljs.initHighlightingOnLoad();
 		});	
 	}
 	
-	if ($(".animate").length > 0) {
-		$("head").append("<link>");
-		css = $("head").children(":last");
-		css.attr({
-			rel:  "stylesheet",
-			type: "text/css",
-			href: "//cdn.regner.us/css/animate.css"
-		});
-	}
+//	if ($(".animate").length > 0) {
+//		$("head").append("<link>");
+//		css = $("head").children(":last");
+//		css.attr({
+//			rel:  "stylesheet",
+//			type: "text/css",
+//			href: "//cdn.regner.us/css/animate.css"
+//		});
+//	}
 	
 	$(".alert").alert()
 	
