@@ -38,7 +38,7 @@ $(document).ready(function() {
 			indentString: "&nbsp;&nbsp;&nbsp;"  // string for indenting nested items
 		});
 	}
-	
+
 	if ($("code").length > 0) {
 		head.js({highlight: "//cdn.regner.us/js/highlight.js"});	
 		head.ready("highlight", function() {
