@@ -41,7 +41,7 @@ twttr.ready(function (twttr) {
 });
 
 head.ready("plugins", function() {
-	if (head.browser.lt-ie8)  {
+	if (head.browser.ie)  {
 		head.js({selectivizr: "//cdn.regner.us/js/selectivizr.js"});
 	}
 	
