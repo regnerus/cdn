@@ -22,8 +22,6 @@ window.twttrCall = function (t) {
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js');
     // Twitter SDK
     add('//platform.twitter.com/widgets.js', 'twitter-wjs', window.twttrCall);
-    //Facebook SDK
-    add('//connect.facebook.net/nl_NL/all.js#xfbml=1&appId=73619953708', 'facebook-jssdk');
 }(document, 'script'));
 
 // Twitter event tracking in GA
@@ -47,16 +45,6 @@ head.ready("plugins", function() {
 		head.js({selectivizr: "//cdn.regner.us/js/selectivizr.js"});
 	}
 	
-	if ($.fn.mobileMenu && $(".list-on-phones ul").length > 0) {
-		var choosePage;if($("html").attr("lang")=="en"){choosePage="Choose a Page"}else if($("html").attr("lang")=="nl"){choosePage="Kies een Pagina"}else if($("html").attr("lang")=="de"){choosePage="Wählen Sie eine Seite"}else if($("html").attr("lang")=="fr"){choosePage="Choisir une page"}else{choosePage="Choose a Page"}
-		
-		$(".list-on-phones ul").mobileMenu({
-			switchWidth: 660,                   // width (in px to switch at)
-			topOptionText: choosePage,     // first option text
-			indentString: "&nbsp;&nbsp;&nbsp;"  // string for indenting nested items
-		});
-	}
-	
 	$("input, textarea").placeholder();
 	
 	$(".slides").orbit({
@@ -64,8 +52,25 @@ head.ready("plugins", function() {
 		bullets: true
 	});
 	
-	if($("html").attr("lang")=="en"){jQuery.timeago.settings.strings={prefixAgo:null,prefixFromNow:null,suffixAgo:"ago",suffixFromNow:"from now",seconds:"less than a minute",minute:"about a minute",minutes:"%d minutes",hour:"about an hour",hours:"about %d hours",day:"a day",days:"%d days",month:"about a month",months:"%d months",year:"about a year",years:"%d years",wordSeparator:" ",numbers:[]}}else if($("html").attr("lang")=="nl"){jQuery.timeago.settings.strings={prefixAgo:null,prefixFromNow:"",suffixAgo:"geleden",suffixFromNow:"van nu",seconds:"minder dan een minuut",minute:"ongeveer een minuut",minutes:"%d minuten",hour:"ongeveer een uur",hours:"ongeveer %d uur",day:"een dag",days:"%d dagen",month:"ongeveer een maand",months:"%d maanden",year:"ongeveer een jaar",years:"%d jaar",wordSeparator:" ",numbers:[]}}else if($("html").attr("lang")=="de"){jQuery.timeago.settings.strings={prefixAgo:"vor",prefixFromNow:"in",suffixAgo:"",suffixFromNow:"",seconds:"wenigen Sekunden",minute:"etwa einer Minute",minutes:"%d Minuten",hour:"etwa einer Stunde",hours:"%d Stunden",day:"etwa einem Tag",days:"%d Tagen",month:"etwa einem Monat",months:"%d Monaten",year:"etwa einem Jahr",years:"%d Jahren"}}else if($("html").attr("lang")=="fr"){jQuery.timeago.settings.strings={prefixAgo:"il y a",prefixFromNow:"d'ici",seconds:"moins d'une minute",minute:"environ une minute",minutes:"environ %d minutes",hour:"environ une heure",hours:"environ %d heures",day:"environ un jour",days:"environ %d jours",month:"environ un mois",months:"environ %d mois",year:"un an",years:"%d ans"}}
-	
+	if($("html").attr("lang")=="en"){
+		jQuery.timeago.settings.strings={prefixAgo:null,prefixFromNow:null,suffixAgo:"ago",suffixFromNow:"from now",seconds:"less than a minute",minute:"about a minute",minutes:"%d minutes",hour:"about an hour",hours:"about %d hours",day:"a day",days:"%d days",month:"about a month",months:"%d months",year:"about a year",years:"%d years",wordSeparator:" ",numbers:[]};
+		$(".chzn-select").chosen({no_results_text: "Sorry, no results!"});
+		}else if($("html").attr("lang")=="nl"){
+		jQuery.timeago.settings.strings={prefixAgo:null,prefixFromNow:"",suffixAgo:"geleden",suffixFromNow:"van nu",seconds:"minder dan een minuut",minute:"ongeveer een minuut",minutes:"%d minuten",hour:"ongeveer een uur",hours:"ongeveer %d uur",day:"een dag",days:"%d dagen",month:"ongeveer een maand",months:"%d maanden",year:"ongeveer een jaar",years:"%d jaar",wordSeparator:" ",numbers:[]};
+		$(".chzn-select").chosen({no_results_text: "Sorry, geen resultaten!"});
+		}
+		else if($("html").attr("lang")=="de"){
+		jQuery.timeago.settings.strings={prefixAgo:"vor",prefixFromNow:"in",suffixAgo:"",suffixFromNow:"",seconds:"wenigen Sekunden",minute:"etwa einer Minute",minutes:"%d Minuten",hour:"etwa einer Stunde",hours:"%d Stunden",day:"etwa einem Tag",days:"%d Tagen",month:"etwa einem Monat",months:"%d Monaten",year:"etwa einem Jahr",years:"%d Jahren"};
+		$(".chzn-select").chosen({no_results_text: "Sorry, keine Resultate!"});
+		}
+		else if($("html").attr("lang")=="fr"){
+		jQuery.timeago.settings.strings={prefixAgo:"il y a",prefixFromNow:"d'ici",seconds:"moins d'une minute",minute:"environ une minute",minutes:"environ %d minutes",hour:"environ une heure",hours:"environ %d heures",day:"environ un jour",days:"environ %d jours",month:"environ un mois",months:"environ %d mois",year:"un an",years:"%d ans"};
+		$(".chzn-select").chosen({no_results_text: "Désolé, aucun résultat!"});
+		}
+	else {
+		jQuery.timeago.settings.strings={prefixAgo:null,prefixFromNow:null,suffixAgo:"ago",suffixFromNow:"from now",seconds:"less than a minute",minute:"about a minute",minutes:"%d minutes",hour:"about an hour",hours:"about %d hours",day:"a day",days:"%d days",month:"about a month",months:"%d months",year:"about a year",years:"%d years",wordSeparator:" ",numbers:[]};
+		$(".chzn-select").chosen({no_results_text: "Sorry, no results!"});
+	}
 	$("time.timeago").timeago();
 
 	$("textarea").autogrow();
@@ -73,13 +78,6 @@ head.ready("plugins", function() {
 	$("a").smoothScroll();
 	
 	$(".alert").alert()
-	
-	if ($("code").length > 0) {
-		head.js({highlight: "//cdn.regner.us/js/highlight.js"});	
-		head.ready("highlight", function() {
-			hljs.initHighlightingOnLoad();
-		});	
-	}
 });
 
 head.ready("view", function () {
@@ -87,10 +85,10 @@ head.ready("view", function () {
 });
   
 head.js(
-	{jquery: "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"}, 
+	{jquery: "//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"}, 
 	function() {
 		head.js(
 			{view: "//cdn.regner.us/js/view.js"},
-			{plugins: "//cdn.regner.us/js/plugins.js"}
+			{plugins: "//cdn.regner.us/js/plugins2.js"}
 		);		
 });
