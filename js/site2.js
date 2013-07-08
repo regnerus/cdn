@@ -41,7 +41,7 @@ twttr.ready(function (twttr) {
 });
 
 head.ready("plugins", function() {
-	if ($.browser.msie  && parseInt($.browser.version, 10) <= 8) {
+	if (head.browser.lt-ie8)  {
 		head.js({selectivizr: "//cdn.regner.us/js/selectivizr.js"});
 	}
 	
